@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Moon Rising App</title>
+	<meta charset = "utf-8"/>
+	<meta name = "viewport" content = "width = device - width, initial-scale = 1.0"/>
+	<link rel = "stylesheet" type = "text/css" href = "styles/style.css"/>
+</head>
+
+<body>
+	<div id="container">
+		<div id="upperText">
+			<h1>Moon Rising App</h1>
+			<h2>This app allows the user to gather real-time data about the Earth's moon.</h2>
+			<h2>The Moon Rising App uses vanilla JavaScript to make an AJAX call in order to request JSON data from a RESTful API. This app was created using JavaScript, HTML5, and CSS3. The app is responsive.</h2>
+			<input type="submit" value="Update" id="searchbtn">
+		</div>
+
+		<div id="responsewrapper">
+			<p>
+				<span class="noData" >Current age of the Moon in days: <span class="data" id="age"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Illumination of the Moon: <span class="data" id="illumination"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Stage of the Moon: <span class="data" id="stage"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Distance from the center of the Earth: <span class="data" id="coreDistance"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Distance from the Sun: <span class="data" id="sunDistance"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Time-Date of the full Moon: <span class="data" id="fullMoon"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Time-Date of the new Moon: <span class="data" id="newMoon"></span></span>
+			</p>
+		</div>
+	</div>
+	<footer>
+		<span>The API is provided by <a href="www.burningsoul.in">www.burningsoul.in</a></span>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+</html>

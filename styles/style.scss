@@ -1,0 +1,124 @@
+@mixin btnradius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin btngradient($topcolor, $botcolor) {
+	background: $topcolor;
+    background: -webkit-linear-gradient($topcolor, $botcolor); 
+    background: -o-linear-gradient($topcolor, $botcolor); 
+    background: -moz-linear-gradient($topcolor, $botcolor);
+    background: linear-gradient($topcolor, $botcolor); 
+}
+
+@mixin btngradient($topcolor, $botcolor) {
+	background: $topcolor;
+    background: -webkit-linear-gradient($topcolor, $botcolor); 
+    background: -o-linear-gradient($topcolor, $botcolor); 
+    background: -moz-linear-gradient($topcolor, $botcolor);
+    background: linear-gradient($topcolor, $botcolor); 
+}
+
+$startfont: blue;
+$datafont: #cc0000;
+$topcolor: blue;
+$botcolor: #cc0000;
+$linkcolor: white;
+$linkhover: #cc0000;
+
+$font: 'beamweapon';
+
+@font-face {
+	font-family: $font;
+	src: url('../../../fonts/beamweapon.ttf')
+}
+
+body {
+	background-image: url('../../../Images/moonOpac.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+    background-repeat: no-repeat;
+	color: $startfont;
+	font-family: $font;
+	text-shadow: 0px 0px 30px white;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: $linkcolor;
+}
+
+a:hover {
+	color: #cc0000;
+}
+
+#container {
+	margin: auto;
+}
+
+#upperText {
+	text-align: center;
+}
+
+#searchbtn {
+	@include btnradius(10px);
+	@include btngradient($topcolor, $botcolor);
+	width: 100%;
+	height: 40px;
+	font-size: 22px;
+	font-family: $font;
+}
+
+#responsewrapper {
+	font-size: 22px;
+}
+
+span.data {
+	color: $datafont;
+	margin: 2% 0;
+	display: block;
+}
+
+span.data:hover {
+	text-shadow: 0px 0px 20px $startfont;
+	font-size: 25px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 2000px) and (orientation: portrait)
+{
+	#searchbtn {
+	width: 200px;
+	margin:auto;
+	}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 2000px) and (orientation: landscape)
+{
+	#searchbtn {
+	width: 200px;
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 2000px) and (orientation: portrait)
+{
+	span.data {
+	margin: 0;
+	display: inline;
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 2000px) and (orientation: landscape)
+{
+	span.data {
+	margin: 0;
+	display: inline;
+	}
+}

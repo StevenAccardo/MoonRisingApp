@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "beamweapon";
+  src: url("../../../fonts/beamweapon.ttf"); }
+body {
+  background-image: url("../../../Images/moonOpac.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: blue;
+  font-family: "beamweapon";
+  text-shadow: 0px 0px 30px white; }
+
+a {
+  text-decoration: none; }
+
+a:link, a:visited {
+  color: white; }
+
+a:hover {
+  color: #cc0000; }
+
+#container {
+  margin: auto; }
+
+#upperText {
+  text-align: center; }
+
+#searchbtn {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: blue;
+  background: -webkit-linear-gradient(blue, #cc0000);
+  background: -o-linear-gradient(blue, #cc0000);
+  background: -moz-linear-gradient(blue, #cc0000);
+  background: linear-gradient(blue, #cc0000);
+  width: 100%;
+  height: 40px;
+  font-size: 22px;
+  font-family: "beamweapon"; }
+
+#responsewrapper {
+  font-size: 22px; }
+
+span.data {
+  color: #cc0000;
+  margin: 2% 0;
+  display: block; }
+
+span.data:hover {
+  text-shadow: 0px 0px 20px blue;
+  font-size: 25px; }
+
+@media only screen and (min-width: 500px) and (max-width: 2000px) and (orientation: portrait) {
+  #searchbtn {
+    width: 200px;
+    margin: auto; } }
+@media only screen and (min-width: 500px) and (max-width: 2000px) and (orientation: landscape) {
+  #searchbtn {
+    width: 200px; } }
+@media only screen and (min-width: 700px) and (max-width: 2000px) and (orientation: portrait) {
+  span.data {
+    margin: 0;
+    display: inline; } }
+@media only screen and (min-width: 700px) and (max-width: 2000px) and (orientation: landscape) {
+  span.data {
+    margin: 0;
+    display: inline; } }
+
+/*# sourceMappingURL=style.css.map */
